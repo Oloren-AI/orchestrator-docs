@@ -31,4 +31,11 @@ myst_enable_extensions = ["attrs_block"]
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'furo'
+
 html_static_path = ['_static']
+html_css_files = [
+    'css/custom.css',
+]
+
+def setup(app):
+    app.add_css_file('css/custom.css')  # may also be an URL
