@@ -33,9 +33,4 @@ myst_enable_extensions = ["attrs_block"]
 html_theme = 'furo'
 
 html_static_path = ['_static']
-html_css_files = [
-    'css/custom.css',
-]
-
-def setup(app):
-    app.add_css_file('css/custom.css')  # may also be an URL
+templates_path = ['_templates']
