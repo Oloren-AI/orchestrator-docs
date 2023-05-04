@@ -21,4 +21,4 @@ help:
 
 .PHONY: dev
 dev:
-	sphinx-autobuild . _build
+	sphinx-autobuild source _build
