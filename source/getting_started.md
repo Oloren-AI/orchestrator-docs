@@ -27,6 +27,8 @@ Nodes are windows into what's going on under the hood. Press on a node, and you'
 3. A node ID on the right. 
 4. A bunch of node metadata, super useful for debugging. 
 
+Under the node ID, there's the additional functionality for locking nodes. Locked nodes are prevented from being rerun. We suggest locking nodes that take a long time to run and have stable output.
+
 Adding inputs and outputs is really important for networking together complex workflows. Nodes have two types of edges: black and blue.
 
 Black edges are for passing around *values*. For example, if I have an add node with inputs of 1 and 2, connecting the black edge passes 3. 
