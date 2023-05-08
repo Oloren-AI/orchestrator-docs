@@ -27,7 +27,11 @@ Nodes are windows into what's going on under the hood. Press on a node, and you'
 3. A node ID on the right. 
 4. A bunch of node metadata, super useful for debugging. 
 
-Adding inputs and outputs is really important for networking together complex workflows. Simply drag and connect nodes in order to link them together. Use the black dots in order to connect nodes - the blue dots are for special JSON funcitonality.
+Adding inputs and outputs is really important for networking together complex workflows. Nodes have two types of edges: black and blue.
+
+Black edges are for passing around *values*. For example, if I have an add node with inputs of 1 and 2, connecting the black edge passes 3. 
+
+Blue edges are for passing around *functions*. For the same add node, connecting the blue edge would pass around an add function with an available input node.
 
 
 ## Upload Files
